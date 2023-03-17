@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+/* landingpage */
+#footerland {
+  display: flex;
+  gap: 17rem;
+  margin-top: 500px;
+  background-color: #0062cc;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: url(./IMAGES/Landing\ page.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+#company-logo {
+  height: 4rem;
+  width: 4rem;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #0062cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.headed {
+  color: #0062cc;
+}
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #0062cc;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1 em;
+  color: #0062cc;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #0062cc;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation .btnLogin-popup:hover {
+  background-color: #0062cc;
+  color: #fff;
+}
+@media screen AND (max-width: 480px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+  #footerland {
+    display: flex;
+    gap: 1rem;
+    background-color: #0062cc;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .navigation a {
+    position: relative;
+    font-size: 15px;
+    color: #0062cc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+  .navigation H3 {
+    color: #0062cc;
+    margin-left: -10rem;
+    font-size: 25px;
+  }
+}
